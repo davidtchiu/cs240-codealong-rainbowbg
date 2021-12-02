@@ -10,19 +10,19 @@ const DELAY = 1000; // 1 sec
 // delayedChangeBGColor("violet", DELAY);
 
 // Version 2: nested promises (pyramid of doom)
-delayedChangeBGColor("red", DELAY).then(() => {
-  delayedChangeBGColor("orange", DELAY).then(() => {
-    delayedChangeBGColor("yellow", DELAY).then(() => {
-      delayedChangeBGColor("green", DELAY).then(() => {
-        delayedChangeBGColor("blue", DELAY).then(() => {
-          delayedChangeBGColor("indigo", DELAY).then(() => {
-            delayedChangeBGColor("violet", DELAY).then(() => {});
-          });
-        });
-      });
-    });
-  });
-});
+// delayedChangeBGColor("red", DELAY).then(() => {
+//   delayedChangeBGColor("orange", DELAY).then(() => {
+//     delayedChangeBGColor("yellow", DELAY).then(() => {
+//       delayedChangeBGColor("green", DELAY).then(() => {
+//         delayedChangeBGColor("blue", DELAY).then(() => {
+//           delayedChangeBGColor("indigo", DELAY).then(() => {
+//             delayedChangeBGColor("violet", DELAY).then(() => {});
+//           });
+//         });
+//       });
+//     });
+//   });
+// });
 
 // Version 3: With Chaining (Better!)
 // delayedChangeBGColor("red", DELAY)
